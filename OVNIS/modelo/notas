@@ -1,0 +1,7 @@
+import pickle 
+pickle.dump(data_processing.columns,open('lista1.pkl','wb'))
+import pickle 
+pickle.dump(data_processing.columns,open('lista2.pkl','wb'))
+lista1 = pickle.load(open('lista1.pkl','rb'))
+lista2 = pickle.load(open('lista2.pkl','rb' ))
+print(set(lista1)-set(lista2))
